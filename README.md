@@ -59,8 +59,8 @@ open http://localhost:3000
 ## Key ideas
 
 - Use Vite's `ssr` options to compile the server. Execute the compiled bundle, not the raw server code, because the bundle will contain the correct file paths to your compiled assets.
-- Import global CSS/JS using `?url` suffix to pull in assets into Vite's compile graph without pulling client code into the server bundle.
-- Split CSS files from compiled CSS modules.
+- Import global CSS/JS using `?url` suffix to pull in assets into Vite's compile graph without pulling client code into the server bundle. The `?url` import suffix returns a filepath to the compiled asset including the asset's hash, which you can use in `<link>` and `<script>` tags.
+- Split off a new chunk for each component that imports a CSS module in order to trigger Vite's CSS plugin to emit a separate CSS file for each CSS module. `<link>`ing to these separate files will allow the browser to download only the CSS that's necessary for each page and will improve caching.
 
 ## emitCssModules Vite plugin
 
