@@ -1,4 +1,6 @@
 {
+  "name": "vite-server-build-demo",
+  "author": "Ersin Akinci <me@ersinakinci.com>",
   "scripts": {
     "dev": "./node_modules/.bin/vite",
     "build": "./node_modules/.bin/vite build",
