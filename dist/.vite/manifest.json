@@ -1,0 +1,24 @@
+{
+  "/Users/ersin/projects/vite-server-build-demo/src/assets/index.css": {
+    "file": "assets/index-ajZuldYb.css",
+    "src": "/Users/ersin/projects/vite-server-build-demo/src/assets/index.css"
+  },
+  "src/components/Header.tsx": {
+    "file": "assets/Header.tsx-Bq9XZBxj.js",
+    "name": "Header.tsx",
+    "src": "src/components/Header.tsx",
+    "isEntry": true,
+    "css": [
+      "assets/Header-DCikYuPz.css"
+    ]
+  },
+  "src/index.tsx": {
+    "file": "_worker.js",
+    "name": "index",
+    "src": "src/index.tsx",
+    "isEntry": true,
+    "imports": [
+      "src/components/Header.tsx"
+    ]
+  }
+}

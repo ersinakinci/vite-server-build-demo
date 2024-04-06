@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "dev": "./node_modules/.bin/vite",
+    "build": "./node_modules/.bin/vite build",
+    "start": "node ./dist/_worker.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "@hono/node-server": "^1.9.0",
+    "hono": "^4.2.2"
+  },
+  "devDependencies": {
+    "@hono/vite-dev-server": "^0.10.0",
+    "@rollup/pluginutils": "^5.1.0",
+    "@types/node": "^20.11.17",
+    "tsx": "^4.7.1",
+    "vite": "^5.2.8"
+  }
+}
