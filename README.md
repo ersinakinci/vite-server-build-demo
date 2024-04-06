@@ -19,7 +19,7 @@ dist/                  <-- Vite-compiled output
     Header-*.css       <-- transformed CSS module
     Header.tsx-*.js    <-- weird CSS module artifact produced when splitting chunks
     index-*.css        <-- global CSS
-  _worker.js           <-- server bundle
+  _worker.js           <-- server bundle; run this to start your app.
 
 src/
   assets/
@@ -58,8 +58,8 @@ open http://localhost:3000
 
 ## Key ideas
 
-- Use Vite's `ssr` options to compile the server.
-- Import global CSS/JS using `?url` suffix.
+- Use Vite's `ssr` options to compile the server. Execute the compiled bundle, not the raw server code, because the bundle will contain the correct file paths to your compiled assets.
+- Import global CSS/JS using `?url` suffix to pull in assets into Vite's compile graph without pulling client code into the server bundle.
 - Split CSS files from compiled CSS modules.
 
 ## emitCssModules Vite plugin
